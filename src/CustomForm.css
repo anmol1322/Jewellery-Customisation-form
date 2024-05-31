@@ -1,0 +1,125 @@
+/* src/components/CustomForm.css */
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center-align the text */
+  font-size: 24px;
+}
+
+.question-container {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  animation-duration: 0.5s;
+}
+
+.note-icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.note-icon:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: 25px;
+  right: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  z-index: 10;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Left-align the note text */
+}
+
+select {
+  font-size: 18px; /* Increased font size */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.option-label {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.option-label input {
+  margin-right: 10px;
+  padding: 10px 5px 10px 5px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+
+  align-items: center;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button .faChevronRight {
+  margin-left: 10px;
+}
+
+.file-upload {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.file-upload input {
+  display: none;
+}
+
+.file-upload label {
+  cursor: pointer;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-preview {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
